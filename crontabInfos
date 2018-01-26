@@ -1,0 +1,7 @@
+# Création d'un cron : exécution périodique d'un programme
+
+# Commande : crontab -e
+# Appel de importData.sh du lundi au samedi, à 7, 13, 17h
+
+# m h  dom mon dow   command
+0 7,13,17 * * 1-5 /var/www/html/EDT/importData.sh

@@ -1,0 +1,38 @@
+/*
+style-extendes.css : An extension design for style.ss
+Authors : Yasmine Bekhiche, Maxence Wurth, Raphaël Dupriez, Kevin Germain, Vladimir Ignjatovic
+PFE Promotion 2018 - ECE Paris
+
+Version : 1.0
+
+Date dernière modification : 18/01/2018
+
+*/
+
+/* Style Globale */
+
+h1{
+	width:150px;
+	margin:auto;
+	text-align:center;
+	color:white;
+	border-radius:5px;
+}
+
+/* Style id */
+
+/* Style classes */
+
+.events-header{
+	margin:0;
+	height:50px;
+	width:100%;
+	background-color:#042029;
+}
+
+.sandbox{
+	margin:10px;
+	height:50px;
+	width:100%;
+	background-color:#042029;
+}

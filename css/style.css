@@ -1,0 +1,217 @@
+/*
+style.css : CSS design for all pages
+
+Authors : Yasmine Bekhiche, Maxence Wurth, Raphaël Dupriez, Kevin Germain, Vladimir Ignjatovic
+PFE Promotion 2018 - ECE Paris
+
+Version : 1.0
+
+Date dernière modification : 10/01/2018
+
+*/
+
+*
+{
+	box-sizing: border-box;
+	font-style: normal;
+}
+
+/* Suppression de l'affichage des points sur les listes à puce */
+ul
+{
+	list-style: none;
+}
+
+body
+{
+	font-family: "Source Sans Pro", sans-serif;
+	color: #222222;
+	background-color: white;
+}
+
+.EnTete
+{
+	text-align: center;
+	font-size:25px;
+	font-weight: bold;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.headerDate
+{
+	float: left;
+}
+
+.headerSemaine
+{
+	float: right;
+}
+
+.PiedDePage
+{
+	display: flex;
+	margin-left: 50px;
+	margin-top: 790px;
+	height: 86px;
+	font-weight: bold;
+}
+
+.container
+{
+  display: flex;
+	font-size: 30px;
+}
+
+.boutonSalleLibre
+{
+    border: 1px solid grey;
+    background-color: #e5e7e9; /* gris */
+    width: 400px;
+    height: 70px;
+    border-radius: 1000px;
+    margin: 2px;
+}
+
+.aligner
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.zoneMessages
+{
+	border: solid 1px #C2C2C2;
+	width: 100%;
+	margin-left: 40px;
+	margin-bottom: 20px;
+	padding: 5px;
+	padding-left: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.timeline
+{
+	position: absolute;
+	/* Pour les lignes verticales */
+	/*height: 100%;*/
+	width: calc(100% - 17px);
+	padding-top: 40px; /* Valeur a changer pour la hauteur totale de la fenetre (hauteur dynamique ?)*/
+}
+
+/* Espacement entre les heures */
+.timeline li
+{
+	position: relative;
+	right: 30px;
+	height: 25px; /* Valeur a changer pour la hauteur totale de la fenetre (hauteur dynamique ?)*/
+}
+
+/* Lignes horizontales */
+.timeline li::after
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: 1px;
+	background: #EAEAEA;
+	width: calc(100% - 30px);
+	left: 60px;
+}
+
+
+/* Ne pas afficher les demi heures et ne pas afficher la dernière ligne */
+.timeline li:nth-of-type(2n) span,.timeline li:last-of-type::after
+{
+	display: none;
+}
+
+.events
+{
+	float: left;
+	/* 30px is the .timeline element width */
+	width: calc(100% - 30px);
+	margin-left: 30px;
+}
+
+.events-group
+{
+	width: calc(100% / 6);;
+	float: left;
+	border: 1px solid #C2C2C2;
+}
+
+.events-group > ul
+{
+	position: relative;
+	/* Pour règler la hauteur des colonnes (100px par h) */
+	height: calc(20 * 35px - 2px); /* Valeur a changer pour la hauteur totale de la fenetre (hauteur dynamique ?) - 21 = nombre de demi-heure*/
+	padding: 0px;
+}
+
+.top-info
+{
+	width: 100%;
+	display: table;
+	height: 40px; /* Valeur a changer pour la hauteur totale de la fenetre (hauteur dynamique ?)*/
+	border-bottom: 1px solid #C2C2C2;
+	background: #ECECEC; /* Gris */
+}
+
+.top-info > span
+{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.single-event
+{
+	/* La position verticale, horizontale et la hauteur des blocs sont gérées en js */
+	position: absolute;
+	background:  #e5e7e9; /* Gris */
+	border-radius: 5px 5px 5px 5px; /* bords arrondis */
+ 	display: flex;
+	text-align: center;
+	margin:auto;
+	overflow: hidden;
+	padding: 2px;
+}
+
+.single-event em
+{
+	display: block;
+	margin:auto;
+	color: #2E2E2E;
+}
+
+.event-summary
+{
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.event-location
+{
+	font-weight: bold;
+	font-size: 12px;
+}
+
+/*
+.event-descGroupe
+{
+	font-size: 16px;
+}
+
+.event-descIntervenant
+{
+	font-size: 15px;
+
+}
+*/

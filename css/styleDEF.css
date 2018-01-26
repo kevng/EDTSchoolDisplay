@@ -1,0 +1,144 @@
+/*
+styleDEF.css : CSS for colors and events
+
+Authors : Yasmine Bekhiche, Maxence Wurth, Raphaël Dupriez, Kevin Germain, Vladimir Ignjatovic
+PFE Promotion 2018 - ECE Paris
+
+Version : 1.0
+
+Date dernière modification : 18/01/2018
+
+*/
+
+.top-info[annee*="SI"]
+{
+	background:  #2e86c1; /* Bleu foncé */
+}
+
+.top-info[annee*="SE"]
+{
+	background: #229954; /* Vert foncé */
+}
+
+.top-info[annee*="OCRES"]
+{
+	background:  #cb4335; /* Rouge foncé */
+}
+
+.top-info[annee*="TM"]
+{
+	background:  #bcb3d2; /* Violet */
+}
+
+.top-info[url*="sallesDispos"]
+{
+	background:  #adff2f; /* vert clair */
+}
+
+
+.single-event[data-groupe*="1"][data-groupe*="SI"]:not([data-groupe*="EII"])
+{
+	background: #bcb3d2   ; /* Violet */
+}
+
+.single-event[data-groupe*="1A"][data-groupe*="EII"]:not([data-groupe*="TI"])
+{
+	background: #a9CCE3; /* Bleu foncé */
+}
+
+.single-event[data-groupe*="2A"][data-groupe*="TI"]:not([data-groupe*="EII"])
+{
+	background: #bcb3d2 ; /* Violet */
+}
+
+.single-event[data-groupe*="2A"][data-groupe*="EII Elec"]:not([data-groupe*="TI"])
+{
+	background: #e4e5c1  ; /* jaune */
+}
+
+.single-event[data-groupe*="2A"][data-groupe*="EII Info"]:not([data-groupe*="TI"])
+{
+	background:   #ABEBC6 ; /* Vert foncé */
+}
+
+.single-event[data-groupe*="2A"][data-groupe*="EII Info"][data-groupe*="TI"]
+{
+	background:    #d3a3de; /* Rouge foncé */
+}
+
+.single-event[data-groupe*="2A"][data-groupe*="Info"][data-groupe*="EII Elec"]:not([data-groupe*="TI"])
+{
+	background: #a9CCE3; /* Bleu foncé */
+}
+
+.single-event[data-groupe*="3A"][data-groupe*="TI"]:not([data-groupe*="EII"])
+{
+	background: #bcb3d2 ; /* Violet */
+}
+
+.single-event[data-groupe*="3A"][data-groupe*="EII"]:not([data-groupe*="TI"])
+{
+	background: #a9CCE3; /* Bleu foncé */
+}
+
+
+
+
+.single-event[data-chevauchement="chevauchement-0"]
+{
+	width: calc(100% - 2px);
+	left: 1px;
+}
+
+
+.single-event[data-chevauchement="chevauchement-1"][data-groupe*="TI"]
+{
+	width: calc(50% - 2px);
+	right: 1px;
+	left: calc(50% + 1px);
+}
+
+.single-event[data-chevauchement="chevauchement-1"][data-groupe*="EII"]
+{
+	width: calc(50% - 2px);
+	left: 1px;
+	right: calc(50% + 1px);
+}
+
+
+.single-event[data-chevauchement="chevauchement-1"][data-groupe*="EII Info"]
+{
+	width: calc(50% - 2px);
+	right: 1px;
+	left: calc(50% + 1px);
+}
+
+.single-event[data-chevauchement="chevauchement-1"][data-groupe*="EII Elec"]
+{
+	width: calc(50% - 2px);
+	left: 1px;
+	right: calc(50% + 1px);
+}
+
+.single-event[data-chevauchement="chevauchement-2"][data-groupe*="TI"]:not([data-groupe*="EII"])
+{
+	width: calc(33% - 3px);
+	right: 1px;
+}
+
+.single-event[data-chevauchement="chevauchement-2"][data-groupe*="EII Elec"]
+{
+	width: calc(33% - 2px);
+	left: 1px;
+}
+
+.single-event[data-chevauchement="chevauchement-2"][data-groupe*="EII Info"]
+{
+	width: calc(33% + 2px);
+	left:  calc(33% + 1px);
+}
+
+.boutonSalleLibre[formation*="sallesDispos"]
+{
+	background-color: #2e86c1;
+}

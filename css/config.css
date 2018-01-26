@@ -1,0 +1,47 @@
+/*
+config.css : CSS for configuration
+
+Authors : Yasmine Bekhiche, Maxence Wurth, Raphaël Dupriez, Kevin Germain, Vladimir Ignjatovic
+PFE Promotion 2018 - ECE Paris
+Version : 1.0
+
+Date dernière modification : 10/01/2018
+
+*/
+
+form
+{
+	margin-bottom: 30px;
+}
+
+.container
+{
+	margin-top: 20px;
+	width: 1300px;
+}
+
+legend
+{
+	margin-top: 40px;
+}
+
+.titre
+{
+	text-align: center;
+	font: normal 50px Cookie, Arial, Helvetica, sans-serif;
+	margin: 30px;
+}
+
+.zoneMessages
+{
+	border: solid 1px #C2C2C2;
+  height: 85px;
+	margin-bottom: 20px;
+	padding: 8px;
+	border-radius: 10px;
+	overflow: hidden;
+
+	font-size: 14px;
+	font-family: "Source Sans Pro", sans-serif;
+	color: #222222;
+}
